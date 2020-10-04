@@ -25,8 +25,13 @@
     </style>
     <h1>Курс доллара</h1>
     <script>
-        const input=prompt("Введите доллары")
-        alert(input+"долларов="+input*79+"рублей.")
+      const input = prompt("Введите доллары");
+      if (isNaN(parseFloat(input))) {
+        alert("Это не число!");
+       
+      } else {
+        alert(input + "долларов=" + input * 79 + "рублей.");
+      }
     </script>
   </body>
 </html>
